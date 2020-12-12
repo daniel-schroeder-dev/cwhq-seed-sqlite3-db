@@ -5,8 +5,7 @@ if __name__ == "__main__":
     users = get_random_users()
 
     if users:
-        print(users[0])
-        seed_users_db()
+        seed_users_db(users)
     else:
         print("Something went wrong!")
 
