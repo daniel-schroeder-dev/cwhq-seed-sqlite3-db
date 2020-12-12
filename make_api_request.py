@@ -12,7 +12,8 @@ def get_random_users():
     api_url = "https://randomuser.me/api/"
     api_query = {
         "results": 100,
-        "inc": "gender,name,dob"
+        "inc": "gender,name,dob",
+        "nat": "us",
     }
 
     response = requests.get(api_url, api_query)
